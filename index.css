@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 200px;
+    background-color: antiquewhite;
+}
+
+header{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    padding: 8px;
+}
+
+form button{
+padding: 8px;
+font-weight: bold;
+cursor: pointer;
+background-color: antiquewhite;
+}
+
+ul li{
+    margin-top: 20px;
+}
