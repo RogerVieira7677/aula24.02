@@ -32,3 +32,9 @@ background-color: antiquewhite;
 ul li{
     margin-top: 20px;
 }
+
+.feito{
+    text-decoration: line-through;
+
+}
+

@@ -1,13 +1,25 @@
 $(document).ready(function(){
-
 $('form').on('submit', function(e){
-    e.preventDefaut();
+    e.preventDefault();
 
     IncluirTarefa();
+    marcarTarefa();
 })
 })
+
 function IncluirTarefa(){
-    const listaTarefa=$('#lista_tarefas').val();
-    const novoItem=$('<li></li>');
-    $(`<li>"${listaTarefa}"<\li>`).appendTo(novoItem);
+    const itemTafera = $('#lista_tarefas').val();
+    const novaTarefa = $('<li></li>');
+    $(`<li>${itemTafera} </li>`).appendTo(novaTarefa);
+    $(novaTarefa).appendTo('ul');
+    $('#lista_tarefas').val('');
 }
+
+function marcarTarefa(){
+const lista = document.getElementById('lista');
+    
+    $('lista').click(function(){
+        lista.classList('feito');
+    })    
+}
+
