@@ -14,12 +14,23 @@ function IncluirTarefa(){
     $(novaTarefa).appendTo('ul');
     $('#lista_tarefas').val('');
 }
+// JS--------------------------------------------
+// function IncluirTarefa(){
+//     let text = document.getElementById('lista_tarefas').value;
+//     let list = document.getElementById('lista').innerHTML;
+
+//     list += '<li>' +text+ "</li>";
+
+//     document.getElementById('lista').innerHTML = list;
+//     document.getElementById('lista_tarefas').value = null;
+// }
 
 function marcarTarefa(){
-const lista = document.getElementById('lista');
-    
-    $('lista').click(function(){
-        lista.classList('feito');
-    })    
+    const lista = document.querySelector('ul');
+    $("#lista").on("click", "li", function (e) {
+        $(e.target).addClass("feito");
+    });
 }
+
+
 
